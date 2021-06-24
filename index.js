@@ -3,7 +3,7 @@ const cities = require('all-the-cities')
 const kdbush = require('kdbush')
 const geokdbush = require('geokdbush')
 
-const index = kdbush(cities, (p) => p.lon, (p) => p.lat)
+const index = kdbush(cities, (p) => p.loc.coordinates[0], (p) => p.loc.coordinates[1])
 
 module.exports = function (input, maxResults, maxDistance) {
   const lon = input.coords ? +input.coords.longitude : +input.longitude

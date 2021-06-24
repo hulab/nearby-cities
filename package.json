@@ -1,6 +1,6 @@
 {
   "name": "nearby-cities",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Give me your coordinates and I'll tell you where the nearest cities are. Works offline.",
   "main": "index.js",
   "scripts": {
@@ -31,11 +31,13 @@
     "standard": "^14.3.4"
   },
   "dependencies": {
-    "all-the-cities": "^2.0.0",
+    "all-the-cities": "git+https://github.com/hulab/all-the-cities",
     "geokdbush": "^1.0.2",
     "kdbush": "^1.0.1"
   },
   "standard": {
-    "env": ["mocha"]
+    "env": [
+      "mocha"
+    ]
   }
 }
