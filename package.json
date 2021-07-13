@@ -1,14 +1,12 @@
 {
   "name": "nearby-cities",
-  "version": "1.1.1",
-  "description": "Give me your coordinates and I'll tell you where the nearest cities are. Works offline.",
+  "version": "1.1.2",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix=functions/search",
     "test": "mocha && standard",
     "lint": "standard --fix"
   },
-  "repository": "https://github.com/zeke/nearby-cities",
   "keywords": [
     "geolocation",
     "latitude",
@@ -24,7 +22,6 @@
     "zip",
     "county"
   ],
-  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
   "license": "MIT",
   "devDependencies": {
     "mocha": "^3.2.0",
